@@ -1,0 +1,390 @@
+[
+  {
+    "text_id": "98a57cf9-f6e4-416a-a2eb-655470e4ed54",
+    "content": "i love you",
+    "source_language": "hr",
+    "context": {
+      "style": "formal"
+    }
+  },
+  {
+    "text_id": "0210ea93-16c6-4a10-bfdb-a27233cdb051",
+    "content": "i love you",
+    "source_language": "hr",
+    "context": {
+      "style": "formal"
+    }
+  },
+  {
+    "text_id": "1d44a995-2fd2-4e3f-b719-936b0cdd1dda",
+    "content": "i love you",
+    "source_language": "hr",
+    "context": {
+      "style": "formal"
+    }
+  },
+  {
+    "text_id": "e515b8bf-8c56-45e3-8abe-d11b9d2a8937",
+    "content": "i love you",
+    "source_language": "hr",
+    "context": {
+      "style": "formal"
+    }
+  },
+  {
+    "text_id": "9008c75d-5e14-48bf-b6a6-122f63ca264a",
+    "content": "i love you",
+    "source_language": "hr",
+    "context": {
+      "style": "casual"
+    }
+  },
+  {
+    "text_id": "c4d01be2-14d5-49cb-955b-0f7dfeec2262",
+    "content": "i love you",
+    "source_language": "hr",
+    "context": {
+      "style": "poetic"
+    }
+  },
+  {
+    "text_id": "f5512331-a9b8-4f7f-b99b-8b84378421d8",
+    "content": "i love you",
+    "source_language": "hr",
+    "context": {
+      "style": "casual"
+    }
+  },
+  {
+    "text_id": "210db46b-e71f-4719-ac74-c2dbb59e64b1",
+    "content": "I love you",
+    "source_language": "es",
+    "context": {
+      "style": "casual"
+    }
+  },
+  {
+    "text_id": "095be3cb-8089-4112-8908-f21299c0410d",
+    "content": "i love you",
+    "source_language": "en",
+    "context": {
+      "style": "formal"
+    }
+  },
+  {
+    "text_id": "acfa02c8-e97c-4599-b317-3038775dda95",
+    "content": "i love you",
+    "source_language": "en",
+    "context": {
+      "style": "formal"
+    }
+  },
+  {
+    "text_id": "047f56f8-af07-4e9c-924f-84ad0dc56d84",
+    "content": "i love you",
+    "source_language": "en",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "2eb0f861-e4ea-4690-9989-9f6aba98d4a7",
+    "content": "я тебя люблю",
+    "source_language": "uk",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "823c13dd-50ff-498e-b5dd-0fed7f2e7229",
+    "content": "я тебя люблю",
+    "source_language": "uk",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "2e033d9b-a529-4f65-a746-453741a687b7",
+    "content": "я тебя люблю",
+    "source_language": "uk",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "7c66e717-83d5-4033-9256-d2f9f49f3846",
+    "content": "я тебя люблю",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "9ebe5811-4d44-493e-9a13-4ff1c3545563",
+    "content": "я тебя люблю\r\n",
+    "source_language": "uk",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "7a51e12a-7a39-4334-bad5-c31aded34c87",
+    "content": "Я тебя люблю",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "a3bcc8e6-28b5-4252-9cca-dfc065d55a8f",
+    "content": "Я тебя люблю",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "fd14d71e-1c86-4ac5-b53c-3622e1da6c55",
+    "content": "Я тебя люблю",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "b9844a92-a379-4a2c-bb95-69867bce940b",
+    "content": "Я тебя люблю",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "49aed7f0-61e4-4574-9c1b-c68707c860d8",
+    "content": "Я тебя люблю",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "e8166fea-6aec-484d-be44-067f9c302737",
+    "content": "я тебя люблю",
+    "source_language": "uk",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "44918d25-d003-481f-87e1-e0c81eff818e",
+    "content": "я тебя люблю",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "2c4cc310-31f3-4c9e-8ab1-f6a99f38a501",
+    "content": "я тебя люблю",
+    "source_language": "uk",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "077e9514-ade6-4954-b507-ed8605983b58",
+    "content": "я тебя люблю",
+    "source_language": "uk",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "e90e11ec-d8be-4673-8412-891e81a8f376",
+    "content": "я тебя люблю",
+    "source_language": "uk",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "ed48d9ba-27bd-4b5c-81aa-dbe0b46ea722",
+    "content": "я тебя люблю",
+    "source_language": "uk",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "55b2d35a-b6d0-4506-b36b-def4301616ad",
+    "content": "я тебя люблю",
+    "source_language": "uk",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "207912ce-d729-4a78-af60-3a38cd50fa03",
+    "content": "мне нравится",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "593fc945-29e5-4968-b7ab-5d7a184cfffe",
+    "content": "ты мне помог",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "fac0a555-d429-465b-b08b-c8e30ee99420",
+    "content": "я тебя люблю",
+    "source_language": "uk",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "c705153d-5747-4251-8b2a-2deb963df965",
+    "content": "ты мне помог",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "c12a864d-f1b9-44b5-a457-d3cbe4933ec0",
+    "content": "ты мне помог",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "64e88da5-021d-4ab3-8b66-a47c6087a6b5",
+    "content": "ты мне помог\r\n",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "ceb400dd-f9bd-4678-a6f4-76441a0138b4",
+    "content": "ты мне помог",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "860fc344-8859-4368-acf9-c4950f32c2a8",
+    "content": "ты мне помог",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "4650e961-87a2-4fe0-8298-e41f56785692",
+    "content": "ты мне помог",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "6b7bb63c-b1cb-43cc-8f5b-cd4cb4bc2a88",
+    "content": "я тебя люблю",
+    "source_language": "uk",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  }
+]

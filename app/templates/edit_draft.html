@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Редактирование</title>
+    <link rel="icon" href="data:,">
+</head>
+<body>
+  <h2>Редактирование перевода</h2>
+  <a href="/dashboard">← Назад</a>
+  <p><strong>Черновик:</strong> {{ translation.draft }}</p>
+  <form method="POST">
+    <textarea name="final_text" rows="5" cols="60">{{ translation.final_version or translation.draft }}</textarea><br>
+    <button type="submit">Утвердить перевод</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="icon" href="data:,">
+</head>
+<body>
+  <h2>Система машинного перевода — Вход</h2>
+  {% if error %}<p style="color:red">{{ error }}</p>{% endif %}
+  <form method="POST">
+    Имя пользователя: <input name="username" required>
+    <button type="submit">Войти</button>
+  </form>
+  <p>Доступные пользователи: translator1, editor1, admin1</p>
+</body>
+</html>

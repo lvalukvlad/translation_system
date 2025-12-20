@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="icon" href="data:,">
+</head>
+<body>
+  <h2>Панель {{ user.role|title }}</h2>
+  <p>Привет, {{ user.user }}!</p>
+  <a href="/translate">Создать перевод</a> |
+  <a href="/logout">Выйти</a>
+  {% if user.role == 'admin' %}
+    | <a href="/admin/report">Отчёт</a>
+  {% endif %}
+  <h3>Сохранённые переводы:</h3>
+  <ul>
+          {% for t in translations %}
+      <li>
+        ID: {{ t.trans_id }} |
+        Черновик: {{ t.draft[:50] }}... |
+        {% if t.final_version %}✅ Утверждён{% endif %}
+        {% if user.role == 'editor' and not t.final_version %}
+          | <a href="/localize/{{ t.trans_id }}">Локализовать</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

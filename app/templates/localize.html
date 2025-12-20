@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Локализация</title>
+  <link rel="icon" href=",">
+</head>
+<body>
+  <h2>Локализация перевода</h2>
+  <p><strong>Исходный черновик:</strong> {{ translation.draft }}</p>
+  <form method="POST">
+    <p>Выберите лучший вариант:</p>
+    {% for variant in variants %}
+      <label>
+        <input type="radio" name="chosen_variant" value="{{ variant }}" required>
+        {{ variant }}
+      </label><br>
+    {% endfor %}
+    <br>
+    <button type="submit">Утвердить выбранный вариант</button>
+  </form>
+  <a href="/dashboard">← Назад</a>
+</body>
+</html>

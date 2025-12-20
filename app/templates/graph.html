@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Граф знаний</title>
+  <link rel="icon" href=",">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Граф знаний системы</h1>
+    <p>Слова и их переводы с весами уверенности:</p>
+    <div id="graph">
+      {% for word, translations in graph.items() %}
+        <div class="node">
+          <strong>{{ word }}</strong>
+          <ul>
+          {% for trans, data in translations.items() %}
+            <li>{{ trans }} (вес: {{ "%.2f"|format(data.weight) }})</li>
+          {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

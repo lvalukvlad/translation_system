@@ -1,0 +1,50 @@
+[
+  {
+    "original": "Пока",
+    "draft": "[DRAFT | /formal/ | (en-US)] Пока",
+    "final": "[DRAFT | /formal/ | (en-US)] Пока",
+    "context": {
+      "domain": "",
+      "style": "formal",
+      "audience": "",
+      "cultural_notes": []
+    },
+    "improvement": "manual correction"
+  },
+  {
+    "original": "Hello world",
+    "draft": "[DRAFT | /formal/ | (standard)] Hello world",
+    "final": "[V1 | Standard] [DRAFT | /formal/ | (standard)] Hello world → ru",
+    "context": {
+      "domain": "",
+      "style": "formal",
+      "audience": "",
+      "cultural_notes": []
+    },
+    "improvement": "manual correction"
+  },
+  {
+    "original": "Я тебя люблю",
+    "draft": "[DRAFT | /formal/ | (en-US)] я тебя respect",
+    "final": "[DRAFT | /formal/ | (en-US)] I deeply respect you",
+    "context": {
+      "domain": "",
+      "style": "formal",
+      "audience": "",
+      "cultural_notes": []
+    },
+    "improvement": "manual correction"
+  },
+  {
+    "original": "Привет!",
+    "draft": "[DRAFT | /formal/ | (standard)] привет",
+    "final": "[CASUAL] привет",
+    "context": {
+      "domain": "",
+      "style": "formal",
+      "audience": "",
+      "cultural_notes": []
+    },
+    "improvement": "manual correction"
+  }
+]

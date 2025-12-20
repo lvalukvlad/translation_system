@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Создать перевод</title>
+  <link rel="icon" href=",">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Создать перевод</h1>
+    <form method="POST" action="/translate" enctype="multipart/form-data">
+      <label>Введите текст:</label>
+      <textarea name="content" required rows="5" placeholder="Например: Я тебя люблю"></textarea><br>
+
+      <label>Или загрузите файл (.txt):</label>
+      <input type="file" name="file" accept=".txt"><br>
+
+      <label>Исходный язык (auto для автоопределения):</label>
+      <input type="text" name="source_lang" value="auto" required><br>
+
+      <label>Целевой язык:</label>
+      <input type="text" name="target_lang" value="en" required><br>
+
+      <label>Диалект:</label>
+      <select name="dialect">
+        <option value="">Стандартный</option>
+        <option value="en-US">Американский</option>
+        <option value="en-GB">Британский</option>
+      </select><br>
+
+      <label>Домен (необязательно):</label>
+      <input type="text" name="domain" placeholder="например: love, job"><br>
+
+      <label>Стиль (необязательно):</label>
+      <select name="style">
+        <option value="neutral">Нейтральный</option>
+        <option value="formal">Формальный</option>
+        <option value="casual">Неформальный</option>
+        <option value="poetic">Поэтичный</option>
+      </select><br>
+
+      <label>Аудитория (необязательно):</label>
+      <input type="text" name="audience" placeholder="например: friend, boss"><br>
+
+      <button type="submit">Создать перевод</button>
+    </form>
+
+    {% if result %}
+      <div id="result">
+        <h3>Результат перевода:</h3>
+        <p><strong>{{ result }}</strong></p>
+      </div>
+    {% endif %}
+
+    <a href="/dashboard">← Назад</a>
+  </div>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

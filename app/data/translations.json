@@ -1,0 +1,530 @@
+[
+  {
+    "trans_id": "334a1caa-ea53-4728-8f66-75a8aa88fc2b",
+    "text_id": "fb58d635-6651-4fd7-82ed-d1c6fe61c8eb",
+    "draft": "[DRAFT] Я тебя люблю\r\n → en",
+    "final_version": "[DRAFT] Я тебя люблю\r\n → en",
+    "target_language": "en",
+    "quality_score": 0.8
+  },
+  {
+    "trans_id": "79e408cd-2d82-4ba4-8125-609a826e1669",
+    "text_id": "d73f8abe-dfbf-4df8-84bc-6e3b4f533c82",
+    "draft": "[DRAFT | conversational/formal/] Привет",
+    "final_version": "[DRAFT | conversational/formal/] Привет",
+    "target_language": "en",
+    "quality_score": 0.8
+  },
+  {
+    "trans_id": "4279c436-1951-425d-8aeb-72ec321f669e",
+    "text_id": "f1f263a6-6f8a-4fb1-a27a-bfa8ba194f22",
+    "draft": "[DRAFT | /formal/ | (en-US)] Пока",
+    "final_version": "[DRAFT | /formal/ | (en-US)] Пока",
+    "target_language": "en",
+    "quality_score": 0.8
+  },
+  {
+    "trans_id": "d97639e7-5f6c-4133-b216-3d6e266b3bef",
+    "text_id": "ebb3a68a-fec7-4bf5-b4a5-eb1bc13baa48",
+    "draft": "[DRAFT | /formal/ | (standard)] Bye",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "ecac79ab-ab65-40d3-9918-8297b159626c",
+    "text_id": "2b816c5c-c68c-4183-a012-d81e6aecb470",
+    "draft": "[DRAFT | /formal/ | (standard)] Hello world",
+    "final_version": "[V1 | Standard] [DRAFT | /formal/ | (standard)] Hello world → ru",
+    "target_language": "ru",
+    "quality_score": 0.8
+  },
+  {
+    "trans_id": "6423b933-05eb-49b5-807f-94990e478d9f",
+    "text_id": "d6c62894-6e95-4c94-a5fd-d3a831419451",
+    "draft": "[DRAFT | /formal/ | (standard)] я тебя respect",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "34df8d30-2019-461e-be0e-71135ed31e8b",
+    "text_id": "be212aa1-734f-4cd6-824e-ecca8321649c",
+    "draft": "[DRAFT | /formal/ | (en-US)] я тебя respect",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "318458d2-5489-4fc0-b344-53ed8b759998",
+    "text_id": "80fa5731-3137-46ef-b878-3c3bd068b9c5",
+    "draft": "[DRAFT | /formal/ | (en-US)] я тебя respect",
+    "final_version": "[DRAFT | /formal/ | (en-US)] I deeply respect you",
+    "target_language": "en",
+    "quality_score": 0.8
+  },
+  {
+    "trans_id": "8d65d3bc-5a1d-4bf8-a7ce-fc67839a5c56",
+    "text_id": "32baac8f-cb5b-47ba-a222-a5a117e3673e",
+    "draft": "[DRAFT | /formal/ | (standard)] привет",
+    "final_version": "[CASUAL] привет",
+    "target_language": "en",
+    "quality_score": 0.8
+  },
+  {
+    "trans_id": "8a18e468-8250-4e79-80c6-5267a9e82a18",
+    "text_id": "ed3f88f9-110f-4d58-9d5b-4d10c05d8907",
+    "draft": "[DRAFT | None/formal/None | (standard)] я тебя respect",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "2fcab0a4-bbb7-4b7a-84f2-34be18347e9a",
+    "text_id": "35effd6d-5811-47c6-862a-73f335c8c42a",
+    "draft": "[DRAFT | None/formal/None | (standard)] я тебя respect",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "df541beb-faeb-4cf0-8e5e-cd7694de1b67",
+    "text_id": "8f6f0ce2-0a2a-45fb-bfac-6f5e34e952cd",
+    "draft": "[DRAFT | None/formal/None | (standard)] я тебя respect",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "de6bacab-00f9-451b-b738-ad10da188151",
+    "text_id": "c56a1976-bc3a-4151-bce7-cf8e7b3bb10b",
+    "draft": "[DRAFT | None/formal/None | (standard)] i you respect",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "5afa110a-e782-41bf-87fa-ccff40da10d2",
+    "text_id": "6423229e-8884-43d8-b64e-d6b849e181d6",
+    "draft": "[DRAFT | None/formal/None | (standard)] i you respect",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "c7bcdcc3-aa0c-42ba-8e13-bd140e1c8f08",
+    "text_id": "7aa70ef3-e37d-4e74-a22b-0b2e5e7a01ab",
+    "draft": "[DRAFT | None/formal/None | (standard)] I you respect",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "d65ade69-5913-4b21-94b2-00038e5e3a09",
+    "text_id": "07117cfe-6dd8-47c2-b750-5c58133cf411",
+    "draft": "[DRAFT | None/formal/None | (standard)] I you respect",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "b675c9d1-3ba3-4d06-8059-d2307e990f68",
+    "text_id": "32170d7c-8f9d-494f-a3c7-dca45eb9d3b8",
+    "draft": "[DRAFT | None/formal/None | (standard)] I you respect",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "4cb2631e-da4f-4625-b832-7d23073e541e",
+    "text_id": "0b28cff9-16a0-434a-979d-817541117628",
+    "draft": "[DRAFT | None/formal/None | (standard)] I respect you",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "2ba3dc54-9197-47f3-b0e1-2985945202dd",
+    "text_id": "8ae4dd00-4c24-4699-983c-047c366e3c73",
+    "draft": "[DRAFT | None/formal/None | (standard)] I хочу пить",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "5d6ec742-416f-4810-98b5-94980497c5c7",
+    "text_id": "4177d11a-c097-47e3-8bfb-c9ec5e13db9f",
+    "draft": "[DRAFT | None/casual/None | (standard)] I love",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "c0601ba9-3da6-4e74-8d13-a22050240d75",
+    "text_id": "3da3f2e4-bac5-4440-9f77-aa450934647c",
+    "draft": "[DRAFT | None/formal/None | (standard)] I cherish",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "191b1ecd-3482-4594-aff5-98bc58526fca",
+    "text_id": "610273dc-39a3-4b3b-b747-ee021d469811",
+    "draft": "[DRAFT | None/poetic/None | (standard)] Я adore",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "1e1c925a-9909-44b3-a2bb-220882570cb1",
+    "text_id": "abfcc3c0-525f-4858-ab92-b832f582c3ed",
+    "draft": "[DRAFT | None/formal/None | (standard)] I respect you",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "0b81d8b9-2ea7-405a-9e0b-683f3a0ab9fb",
+    "text_id": "47ed4f23-43ca-4af7-b7b0-70b9eb33d52b",
+    "draft": "[DRAFT | None/casual/None | (standard)] I love you",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "8b89bde3-2a0c-4118-a0b1-1d65c52ea36a",
+    "text_id": "4881577f-0108-4d10-9f9e-d24d87ef3a43",
+    "draft": "[DRAFT | None/poetic/None | (standard)] Я тебя adore",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "c3f373ae-f947-4d4a-845b-015ae30296c4",
+    "text_id": "c6b63395-17c1-4ac6-acab-1917423316ab",
+    "draft": "[DRAFT | None/poetic/None | (standard)] Я тебя adore",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "99eabaa4-68a4-494d-a46f-2c5e62177f16",
+    "text_id": "eecc2542-6b72-47b1-859e-1d09d7e415ec",
+    "draft": "[DRAFT | None/poetic/None | (standard)] Мне нравится",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "953221fd-3e73-4ce1-b40c-5c2d171780bc",
+    "text_id": "543c93fd-7aa5-4b11-a30d-4b000e2c49fb",
+    "draft": "[DRAFT | None/formal/None | (standard)] I appreciate it",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "deb793a8-aa7f-417d-b158-fb062bab01f9",
+    "text_id": "fc05cc3a-e617-40c2-a68a-022612f21fb0",
+    "draft": "[DRAFT | None/casual/None | (standard)] I like it",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "e6a1a46b-8000-4808-bc68-ccb8dc915d88",
+    "text_id": "423539b7-4213-43c4-b59b-efa8eb6811bd",
+    "draft": "[DRAFT | None/casual/None | (standard)] You красивый",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "078c8808-da59-47ff-8c84-08b7842bf19c",
+    "text_id": "c0478027-0b17-4dc9-97bd-9ce7a6f464d7",
+    "draft": "[DRAFT | None/formal/None | (standard)] You (formal) красивый",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "fa228d99-710f-4b9c-8b43-a46da4aec0c4",
+    "text_id": "a6fb755b-9d1d-4127-933c-955592680c4e",
+    "draft": "[DRAFT | None/casual/None | (standard)] I очень you like",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "f2227ae2-5850-476c-bc44-874ef65ce548",
+    "text_id": "4f9a399e-f72c-4271-9568-22d5c8ebcb9b",
+    "draft": "[DRAFT | None/formal/None | (standard)] I  you respect",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "0ccb37f5-0bfa-41b7-a42a-7ee04f92c6d9",
+    "text_id": "4723813e-f912-4bf0-969f-aed5c9938e0d",
+    "draft": "[DRAFT | None/formal/None | (standard)] I adore you",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "892440ca-f83e-4a8e-9114-2567817dd66c",
+    "text_id": "65da0ebf-b42a-4fd3-b882-8c4376252ceb",
+    "draft": "[DRAFT | None/formal/None | (standard)] Hello",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "23f48a2c-88ff-4b11-98f5-e05a03603646",
+    "text_id": "424dafdd-b2fe-456e-a9f9-c2fc15fd7675",
+    "draft": "[DRAFT | None/casual/None | (standard)] Hello",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "66026ae7-eb38-4059-a9d3-c1680af911ce",
+    "text_id": "e21ef1c2-0588-46c7-ba8d-03505fc97d15",
+    "draft": "[DRAFT | None/formal/None | (standard)] I respect you",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "b648e1d4-7ce2-410a-8cd5-cf60462a34c2",
+    "text_id": "93810231-7430-4502-b8f0-e82dfc067099",
+    "draft": "[DRAFT | None/formal/None | (standard)] I love you",
+    "final_version": null,
+    "target_language": "en",
+    "quality_score": 0.5
+  },
+  {
+    "trans_id": "047f56f8-af07-4e9c-924f-84ad0dc56d84",
+    "text_id": "047f56f8-af07-4e9c-924f-84ad0dc56d84",
+    "content": "i love you",
+    "draft": "[INFO] Язык текста (en) совпадает с целевым (en). Перевод не требуется.",
+    "final_version": "",
+    "status": "draft"
+  },
+  {
+    "trans_id": "2eb0f861-e4ea-4690-9989-9f6aba98d4a7",
+    "text_id": "2eb0f861-e4ea-4690-9989-9f6aba98d4a7",
+    "content": "я тебя люблю",
+    "draft": "[DRAFT | /neutral/ | (standard)] Я тебя ненавижу",
+    "final_version": "",
+    "status": "draft"
+  },
+  {
+    "trans_id": "823c13dd-50ff-498e-b5dd-0fed7f2e7229",
+    "text_id": "823c13dd-50ff-498e-b5dd-0fed7f2e7229",
+    "content": "я тебя люблю",
+    "draft": "[DRAFT | /neutral/ | (standard)] Я тебя ненавижу",
+    "final_version": "",
+    "status": "draft"
+  },
+  {
+    "trans_id": "2e033d9b-a529-4f65-a746-453741a687b7",
+    "text_id": "2e033d9b-a529-4f65-a746-453741a687b7",
+    "content": "я тебя люблю",
+    "draft": "[DRAFT | /neutral/ | (standard)] Я тебя ненавижу",
+    "final_version": "",
+    "status": "draft"
+  },
+  {
+    "trans_id": "7c66e717-83d5-4033-9256-d2f9f49f3846",
+    "text_id": "7c66e717-83d5-4033-9256-d2f9f49f3846",
+    "content": "я тебя люблю",
+    "draft": "[DRAFT | /neutral/ | (standard)] Я тебя ненавижу",
+    "final_version": "",
+    "status": "draft"
+  },
+  {
+    "trans_id": "9ebe5811-4d44-493e-9a13-4ff1c3545563",
+    "text_id": "9ebe5811-4d44-493e-9a13-4ff1c3545563",
+    "content": "я тебя люблю\r\n",
+    "draft": "[DRAFT | /neutral/ | (standard)] Я тебя ненавижу",
+    "final_version": "",
+    "status": "draft"
+  },
+  {
+    "trans_id": "7a51e12a-7a39-4334-bad5-c31aded34c87",
+    "text_id": "7a51e12a-7a39-4334-bad5-c31aded34c87",
+    "content": "Я тебя люблю",
+    "draft": "[DRAFT | /neutral/ | (standard)] Я тебя ненавижу",
+    "final_version": "",
+    "status": "draft"
+  },
+  {
+    "trans_id": "a3bcc8e6-28b5-4252-9cca-dfc065d55a8f",
+    "text_id": "a3bcc8e6-28b5-4252-9cca-dfc065d55a8f",
+    "content": "Я тебя люблю",
+    "draft": "[DRAFT | /neutral/ | (standard)] Я тебя ненавижу",
+    "final_version": "",
+    "status": "draft"
+  },
+  {
+    "trans_id": "fd14d71e-1c86-4ac5-b53c-3622e1da6c55",
+    "text_id": "fd14d71e-1c86-4ac5-b53c-3622e1da6c55",
+    "content": "Я тебя люблю",
+    "draft": "[DRAFT | /neutral/ | (standard)] Я тебя люблю",
+    "final_version": "",
+    "status": "draft"
+  },
+  {
+    "trans_id": "b9844a92-a379-4a2c-bb95-69867bce940b",
+    "text_id": "b9844a92-a379-4a2c-bb95-69867bce940b",
+    "content": "Я тебя люблю",
+    "draft": "[DRAFT | /neutral/ | (standard)] Я тебя люблю",
+    "final_version": "",
+    "status": "draft"
+  },
+  {
+    "trans_id": "49aed7f0-61e4-4574-9c1b-c68707c860d8",
+    "text_id": "49aed7f0-61e4-4574-9c1b-c68707c860d8",
+    "content": "Я тебя люблю",
+    "draft": "[DRAFT | /neutral/ | (standard)] Я тебя люблю",
+    "final_version": "",
+    "status": "draft"
+  },
+  {
+    "trans_id": "e8166fea-6aec-484d-be44-067f9c302737",
+    "text_id": "e8166fea-6aec-484d-be44-067f9c302737",
+    "content": "я тебя люблю",
+    "draft": "[DRAFT | /neutral/ | (standard)] Я тебя люблю",
+    "final_version": "",
+    "status": "draft"
+  },
+  {
+    "trans_id": "44918d25-d003-481f-87e1-e0c81eff818e",
+    "text_id": "44918d25-d003-481f-87e1-e0c81eff818e",
+    "content": "я тебя люблю",
+    "draft": "[DRAFT | /neutral/ | (standard)] Я тебя люблю",
+    "final_version": "",
+    "status": "draft"
+  },
+  {
+    "trans_id": "2c4cc310-31f3-4c9e-8ab1-f6a99f38a501",
+    "text_id": "2c4cc310-31f3-4c9e-8ab1-f6a99f38a501",
+    "content": "я тебя люблю",
+    "draft": "[DRAFT | /neutral/ | (standard)] Я тебя love",
+    "final_version": "",
+    "status": "draft"
+  },
+  {
+    "trans_id": "077e9514-ade6-4954-b507-ed8605983b58",
+    "text_id": "077e9514-ade6-4954-b507-ed8605983b58",
+    "content": "я тебя люблю",
+    "draft": "[DRAFT | /neutral/ | (standard)] Я тебя love",
+    "final_version": "",
+    "status": "draft"
+  },
+  {
+    "trans_id": "e90e11ec-d8be-4673-8412-891e81a8f376",
+    "text_id": "e90e11ec-d8be-4673-8412-891e81a8f376",
+    "content": "я тебя люблю",
+    "draft": "[DRAFT | /neutral/ | (standard)] Я тебя love",
+    "final_version": "",
+    "status": "draft"
+  },
+  {
+    "trans_id": "ed48d9ba-27bd-4b5c-81aa-dbe0b46ea722",
+    "text_id": "ed48d9ba-27bd-4b5c-81aa-dbe0b46ea722",
+    "content": "я тебя люблю",
+    "draft": "[DRAFT | /neutral/ | (standard)] I love you",
+    "final_version": "",
+    "status": "draft"
+  },
+  {
+    "trans_id": "55b2d35a-b6d0-4506-b36b-def4301616ad",
+    "text_id": "55b2d35a-b6d0-4506-b36b-def4301616ad",
+    "content": "я тебя люблю",
+    "draft": "I love you",
+    "final_version": "",
+    "status": "draft"
+  },
+  {
+    "trans_id": "207912ce-d729-4a78-af60-3a38cd50fa03",
+    "text_id": "207912ce-d729-4a78-af60-3a38cd50fa03",
+    "content": "мне нравится",
+    "draft": "Мне нравится",
+    "final_version": "",
+    "status": "draft"
+  },
+  {
+    "trans_id": "593fc945-29e5-4968-b7ab-5d7a184cfffe",
+    "text_id": "593fc945-29e5-4968-b7ab-5d7a184cfffe",
+    "content": "ты мне помог",
+    "draft": "Ты мне помог",
+    "final_version": "",
+    "status": "draft"
+  },
+  {
+    "trans_id": "fac0a555-d429-465b-b08b-c8e30ee99420",
+    "text_id": "fac0a555-d429-465b-b08b-c8e30ee99420",
+    "content": "я тебя люблю",
+    "draft": "I love you",
+    "final_version": "",
+    "status": "draft"
+  },
+  {
+    "trans_id": "c705153d-5747-4251-8b2a-2deb963df965",
+    "text_id": "c705153d-5747-4251-8b2a-2deb963df965",
+    "content": "ты мне помог",
+    "draft": "Ты мне помог",
+    "final_version": "",
+    "status": "draft"
+  },
+  {
+    "trans_id": "c12a864d-f1b9-44b5-a457-d3cbe4933ec0",
+    "text_id": "c12a864d-f1b9-44b5-a457-d3cbe4933ec0",
+    "content": "ты мне помог",
+    "draft": "Ты мне помог",
+    "final_version": "",
+    "status": "draft"
+  },
+  {
+    "trans_id": "64e88da5-021d-4ab3-8b66-a47c6087a6b5",
+    "text_id": "64e88da5-021d-4ab3-8b66-a47c6087a6b5",
+    "content": "ты мне помог\r\n",
+    "draft": "Ты мне помог",
+    "final_version": "",
+    "status": "draft"
+  },
+  {
+    "trans_id": "ceb400dd-f9bd-4678-a6f4-76441a0138b4",
+    "text_id": "ceb400dd-f9bd-4678-a6f4-76441a0138b4",
+    "content": "ты мне помог",
+    "draft": "Ты мне помог",
+    "final_version": "",
+    "status": "draft"
+  },
+  {
+    "trans_id": "860fc344-8859-4368-acf9-c4950f32c2a8",
+    "text_id": "860fc344-8859-4368-acf9-c4950f32c2a8",
+    "content": "ты мне помог",
+    "draft": "Ты мне помог",
+    "final_version": "",
+    "status": "draft"
+  },
+  {
+    "trans_id": "4650e961-87a2-4fe0-8298-e41f56785692",
+    "text_id": "4650e961-87a2-4fe0-8298-e41f56785692",
+    "content": "ты мне помог",
+    "draft": "Ты мне помог",
+    "final_version": "",
+    "status": "draft"
+  },
+  {
+    "trans_id": "6b7bb63c-b1cb-43cc-8f5b-cd4cb4bc2a88",
+    "text_id": "6b7bb63c-b1cb-43cc-8f5b-cd4cb4bc2a88",
+    "content": "я тебя люблю",
+    "draft": "I love you",
+    "final_version": "",
+    "status": "draft"
+  }
+]
