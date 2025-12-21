@@ -7,20 +7,9 @@
 </head>
 <body>
   <div class="container">
-    <h1>Граф знаний системы</h1>
-    <p>Слова и их переводы с весами уверенности:</p>
-    <div id="graph">
-      {% for word, translations in graph.items() %}
-        <div class="node">
-          <strong>{{ word }}</strong>
-          <ul>
-          {% for trans, data in translations.items() %}
-            <li>{{ trans }} (вес: {{ "%.2f"|format(data.weight) }})</li>
-          {% endfor %}
-          </ul>
-        </div>
-      {% endfor %}
-    </div>
+    <h1>Граф знаний</h1>
+    <pre>{{ graph | tojson(indent=2) }}</pre>
+    <a href="/dashboard">← Назад</a>
   </div>
   <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>

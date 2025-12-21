@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Главная</title>
+  <link rel="icon" href=",">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Добро пожаловать!</h1>
+    {% if session.get('logged_in') %}
+      <p>Вы вошли как: {{ session.get('username') }}</p>
+      <a href="/dashboard">Панель управления</a> | <a href="/logout">Выйти</a>
+    {% else %}
+      <a href="/login">Войти</a>
+    {% endif %}
+  </div>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

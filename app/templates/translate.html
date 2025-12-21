@@ -10,7 +10,7 @@
     <h1>Создать перевод</h1>
     <form method="POST" action="/translate" enctype="multipart/form-data">
       <label>Введите текст:</label>
-      <textarea name="content" required rows="5" placeholder="Например: Я тебя люблю"></textarea><br>
+      <textarea name="content" rows="5" placeholder="Например: Я тебя люблю"></textarea><br>
 
       <label>Или загрузите файл (.txt):</label>
       <input type="file" name="file" accept=".txt"><br>
@@ -52,7 +52,7 @@
       </div>
     {% endif %}
 
-    <a href="/dashboard">← Назад</a>
+    <a href="/dashboard">← Назад</a>  <!-- ← Изменено -->
   </div>
   <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>

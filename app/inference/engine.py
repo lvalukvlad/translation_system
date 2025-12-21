@@ -8,28 +8,34 @@ class InferenceEngine:
         self.kg_service = KnowledgeGraphService()
 
     def infer_translation(self, text, context):
+        print(f"[DEBUG] Text: {text}, Context: {context}")  # ← Добавь
+        # Проверим, есть ли **вся фраза** в графе знаний
         full_phrase_translation = self.kg_service.get_best_translation(text.lower(), context)
+        print(f"[DEBUG] Full phrase result: {full_phrase_translation}")  # ← Добавь
         if full_phrase_translation != text.lower():
             return full_phrase_translation.capitalize()
+
+        # Если нет — разбираем по словам
         parsed = NLPService.parse(text)
+        print(f"[DEBUG] Parsed: {parsed}")  # ← Добавь
         translated_words = []
 
         for word in parsed["words"]:
+            # Уточняем контекст через онтологию
             refined_context = OntologyService.infer_context(context)
-            best_translation = self.kg_service.get_best_translation(word, refined_context)
-            target_lang = context.get('target_lang', 'en')
-            if target_lang == 'en' and best_translation in ['люблю', 'ты', 'я']:
-                best_translation = word
 
+            # Ищем лучший перевод через граф знаний
+            best_translation = self.kg_service.get_best_translation(word, refined_context)
+            print(f"[DEBUG] Word '{word}' -> '{best_translation}'")  # ← Добавь
+
+            # Если не найден — ищем семантически похожие слова
             if best_translation == word:
                 similar_words = SemanticVectorService.find_similar_words(word, threshold=0.6)
                 if similar_words:
-                    candidate = similar_words[0][0]
-                    if target_lang == 'en' and candidate in ['люблю', 'ты', 'я']:
-                        best_translation = word
-                    else:
-                        best_translation = candidate
+                    best_translation = similar_words[0][0]
+
             translated_words.append(best_translation)
+
         result = " ".join(translated_words)
         return result.capitalize()
 

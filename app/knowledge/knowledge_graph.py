@@ -8,11 +8,13 @@ class KnowledgeGraphService:
     def __init__(self):
         self.graph_file = DATA_DIR / 'knowledge_graph.json'
         self.dataset_file = DATA_DIR / 'dataset.json'
+
+        # Загружаем датасет
         self.dataset = StorageService.load_json('dataset.json', [])
-        self.graph = StorageService.load_json('knowledge_graph.json', {})
-        if not self.graph:
-            self.graph = self._build_graph_from_dataset()
-            StorageService.save_json('knowledge_graph.json', self.graph)
+
+        # Всегда строим граф из датасета
+        self.graph = self._build_graph_from_dataset()
+        StorageService.save_json('knowledge_graph.json', self.graph)
 
     def _build_graph_from_dataset(self):
         graph = {}
@@ -21,10 +23,13 @@ class KnowledgeGraphService:
             en = entry['en']
             contexts = entry.get('contexts', [])
             weight = entry.get('weight', 0.8)
+
             if ru not in graph:
                 graph[ru] = {}
+
             if en not in graph[ru]:
                 graph[ru][en] = {"weight": weight, "contexts": []}
+
             graph[ru][en]["contexts"].extend(contexts)
         return graph
 
@@ -42,11 +47,6 @@ class KnowledgeGraphService:
                         break
                 if match and data["weight"] > best_weight:
                     best = trans
-                    best_weight = data["weight"]
-        return best or word
+                    best_weight = data["weight"]  # ← Исправлено: убран лишний отступ
 
-    def update_from_feedback(self, original, draft, final):
-        self.graph[original.lower()] = {
-            final.lower(): {"weight": 0.9, "contexts": []}
-        }
-        StorageService.save_json('knowledge_graph.json', self.graph)
+        return best or word  # Если не найден → возвращаем оригинал

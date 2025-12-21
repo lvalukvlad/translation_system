@@ -21,7 +21,7 @@ def login():
         if username in USERS:
             session['user'] = username
             session['role'] = USERS[username]['role']
-            return redirect(url_for('translation.dashboard'))
+            return redirect(url_for('auth.index'))  # ← Стало (на главную)
         else:
             return render_template('login.html', error="User not found")
     return render_template('login.html')

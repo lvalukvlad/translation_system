@@ -1400,6 +1400,11 @@
     "contexts": [{"style": "casual"}]
   },
   {
+  "ru": "ты мне помог",
+  "en": "you helped me",
+  "contexts": [{"style": "casual"}]
+  },
+  {
     "ru": "я",
     "en": "i",
     "contexts": [{"style": "neutral"}]
