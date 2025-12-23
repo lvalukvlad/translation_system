@@ -116,7 +116,3 @@ venv\Scripts\activate  # Windows
 pip install -r requirements.txt
 ```
 
-<<<<<<< HEAD
-=======
-
->>>>>>> d498ef2 (Update translation system: auth, localization, datasets, UI)
