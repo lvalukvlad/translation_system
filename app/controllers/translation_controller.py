@@ -25,7 +25,7 @@ class TranslationController:
 
     def generate_draft(self, text_id, target_lang='en', dialect=''):
         text_data = next((t for t in self.texts if t['text_id'] == text_id), None)
-        if not text_data:  # ← ИСПРАВЛЕНО
+        if not text_data: 
             raise ValueError("Text not found")
 
         content = text_data['content']
@@ -36,7 +36,6 @@ class TranslationController:
             return text_id, f"[INFO] Язык текста ({source_lang}) совпадает с целевым ({target_lang}). Перевод не требуется."
 
         enriched_context = self._enrich_context(context, dialect, content, source_lang, target_lang)
-        # Получаем тип перевода из контекста (по умолчанию adaptive)
         translation_type = context.get('translation_type', 'adaptive')
         translated_content = self.inference_engine.infer_translation(
             content, enriched_context, 
@@ -50,7 +49,6 @@ class TranslationController:
 
     def _enrich_context(self, context, dialect, text='', source_lang='ru', target_lang='en'):
         from app.knowledge.ontology import OntologyService
-        # Анализируем культурные особенности
         enriched = OntologyService.analyze_cultural_context(text, source_lang, target_lang, context)
         if dialect:
             enriched['dialect'] = dialect
