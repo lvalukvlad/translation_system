@@ -1,6 +1,5 @@
 class Context:
-    def __init__(self, domain=None, style=None, audience=None, cultural_notes=None):
-        self.domain = domain
+    def __init__(self, style=None, cultural_notes=None, translation_type='adaptive'):
         self.style = style
-        self.audience = audience
         self.cultural_notes = cultural_notes or []
+        self.translation_type = translation_type

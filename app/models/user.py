@@ -21,3 +21,20 @@ class Editor(User):
 class Admin(User):
     def __init__(self, user_id, username):
         super().__init__(user_id, username, 'admin')
+
+
+class Expert(User):
+    """Роль эксперта для консультаций по переводу"""
+    def __init__(self, user_id, username, specialization=None):
+        super().__init__(user_id, username, 'expert')
+        self.specialization = specialization  # 'literary', 'technical', 'medical', etc.
+    
+    def provide_consultation(self, translation_id, advice, rating=None):
+        """Предоставляет консультацию по переводу"""
+        return {
+            'expert_id': self.user_id,
+            'translation_id': translation_id,
+            'advice': advice,
+            'rating': rating,
+            'specialization': self.specialization
+        }

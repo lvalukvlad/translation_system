@@ -35,15 +35,23 @@ class TranslationController:
         if source_lang == target_lang:
             return text_id, f"[INFO] Язык текста ({source_lang}) совпадает с целевым ({target_lang}). Перевод не требуется."
 
-        enriched_context = self._enrich_context(context, dialect)
-        translated_content = self.inference_engine.infer_translation(content, enriched_context)
+        enriched_context = self._enrich_context(context, dialect, content, source_lang, target_lang)
+        # Получаем тип перевода из контекста (по умолчанию adaptive)
+        translation_type = context.get('translation_type', 'adaptive')
+        translated_content = self.inference_engine.infer_translation(
+            content, enriched_context, 
+            source_lang=source_lang, 
+            target_lang=target_lang,
+            translation_type=translation_type
+        )
 
         draft = translated_content
         return text_id, draft
 
-    def _enrich_context(self, context, dialect):
+    def _enrich_context(self, context, dialect, text='', source_lang='ru', target_lang='en'):
         from app.knowledge.ontology import OntologyService
-        enriched = OntologyService.infer_context(context)
+        # Анализируем культурные особенности
+        enriched = OntologyService.analyze_cultural_context(text, source_lang, target_lang, context)
         if dialect:
             enriched['dialect'] = dialect
         return enriched

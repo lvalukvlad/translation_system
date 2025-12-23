@@ -5,10 +5,17 @@ class SemanticVectorService:
     SEMANTIC_VECTORS = {
         "люблю": [0.1, 0.9, 0.3],
         "уважаю": [0.8, 0.4, 0.3],
-        "ненавижу": [0.1, 0.95, 0.2],
-        "терпеть не могу": [0.2, 0.9, 0.1],
+        "ненавижу": [0.9, 0.1, 0.2],  # Исправлено: теперь вектор противоположен "люблю"
+        "терпеть не могу": [0.8, 0.2, 0.1],  # Исправлено: теперь вектор противоположен "люблю"
         "работа": [0.5, 0.2, 0.8],
         "труд": [0.6, 0.1, 0.7],
+    }
+    
+    # Словари антонимов для предотвращения замены на противоположные по смыслу слова
+    ANTONYMS = {
+        "люблю": ["ненавижу", "терпеть не могу"],
+        "ненавижу": ["люблю"],
+        "терпеть не могу": ["люблю"],
     }
 
     @classmethod
@@ -28,10 +35,14 @@ class SemanticVectorService:
 
     @classmethod
     def find_similar_words(cls, word, threshold=0.7):
+        """Находит семантически похожие слова, исключая антонимы"""
         target_vec = cls.get_vector(word)
         similar = []
+        word_lower = word.lower()
+        antonyms = cls.ANTONYMS.get(word_lower, [])
+        
         for w, vec in cls.SEMANTIC_VECTORS.items():
-            if w != word:
+            if w != word and w.lower() not in antonyms:
                 sim = cls.cosine_similarity(target_vec, vec)
                 if sim >= threshold:
                     similar.append((w, sim))

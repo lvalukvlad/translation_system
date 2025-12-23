@@ -551,5 +551,372 @@
       "audience": "",
       "cultural_notes": []
     }
+  },
+  {
+    "text_id": "d8973f31-4196-4c6c-903d-47233e53f456",
+    "content": "я тебя люблю",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "b7cdf7b2-c0db-4d60-820e-f5bc17046d90",
+    "content": "я тебя люблю",
+    "source_language": "uk",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "40b382cb-6091-462e-b6fc-a4ebd0ad83d4",
+    "content": "ты мне нравишься",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": []
+    }
+  },
+  {
+    "text_id": "3dec2b78-cde9-4378-a553-e5cc03c89b56",
+    "content": "я тебя люблю",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
+  },
+  {
+    "text_id": "d8e63a63-e8f3-4356-a7ee-41f9983ffcbe",
+    "content": "ты мне нравишься",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
+  },
+  {
+    "text_id": "b18b4d17-6a65-43cc-b96e-26eb488027c0",
+    "content": "я тебя люблю",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
+  },
+  {
+    "text_id": "58b0e182-4731-4c21-a815-aaee240c2769",
+    "content": "ты мне нравишься",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
+  },
+  {
+    "text_id": "6ae4f230-0e22-4ca9-845a-da1ff92bee73",
+    "content": "ты мне нравишься",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": [],
+      "translation_type": "literal"
+    }
+  },
+  {
+    "text_id": "91182f11-f121-4cef-afca-289425fea3b1",
+    "content": "ты мне нравишься",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
+  },
+  {
+    "text_id": "c963415f-fae5-45d9-8295-124069807543",
+    "content": "ты мне нравишься",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
+  },
+  {
+    "text_id": "410fe649-9c8b-451d-9ea4-8820fd49f2d2",
+    "content": "ты мне нравишься",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": "",
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
+  },
+  {
+    "text_id": "6fcc6e27-36e0-4bcc-82dd-1bbf80f73dc0",
+    "content": "я тебя люблю",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "poetic",
+      "audience": "",
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
+  },
+  {
+    "text_id": "1d434959-f0af-4246-8cf4-a7b84c2e8077",
+    "content": "я тебя люблю",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": null,
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
+  },
+  {
+    "text_id": "7b494424-2c0c-4246-91bf-6437db14586f",
+    "content": "ты мне нравишься",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": null,
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
+  },
+  {
+    "text_id": "d3257f84-9688-4a82-ac08-514a30e02f27",
+    "content": "привет",
+    "source_language": "ru",
+    "context": {
+      "domain": "",
+      "style": "neutral",
+      "audience": null,
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
+  },
+  {
+    "text_id": "fbb124b0-2db9-4520-8617-2618d74ee05f",
+    "content": "я тебя люблю",
+    "source_language": "ru",
+    "context": {
+      "style": "neutral",
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
+  },
+  {
+    "text_id": "4c3201aa-d562-4112-816c-38f969297765",
+    "content": "я тебя люблю",
+    "source_language": "ru",
+    "context": {
+      "style": "neutral",
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
+  },
+  {
+    "text_id": "c76c6ea6-9b89-4dbb-a0eb-0f6377adc6f8",
+    "content": "я тебя люблю",
+    "source_language": "ru",
+    "context": {
+      "style": "casual",
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
+  },
+  {
+    "text_id": "e1da9ff0-01b4-4a12-a280-f255dce3417a",
+    "content": "я тебя люблю",
+    "source_language": "ru",
+    "context": {
+      "style": "formal",
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
+  },
+  {
+    "text_id": "de2b597d-f3a1-4a75-936e-0d0160ce4da9",
+    "content": "я тебя люблю",
+    "source_language": "ru",
+    "context": {
+      "style": "formal",
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
+  },
+  {
+    "text_id": "e82eef52-63a3-4c63-a736-9a4093796413",
+    "content": "я тебя люблю",
+    "source_language": "ru",
+    "context": {
+      "style": "casual",
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
+  },
+  {
+    "text_id": "cc74de20-d766-497a-8a7c-739d2ee7e287",
+    "content": "я тебя люблю",
+    "source_language": "ru",
+    "context": {
+      "style": "poetic",
+      "cultural_notes": [],
+      "translation_type": "creative"
+    }
+  },
+  {
+    "text_id": "70bf5334-a4fa-4320-a8c8-76414df693b3",
+    "content": "я тебя люблю",
+    "source_language": "ru",
+    "context": {
+      "style": "neutral",
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
+  },
+  {
+    "text_id": "dc9f6dcb-106a-4de6-a5f0-e48e850b6ca1",
+    "content": "я тебя люблю",
+    "source_language": "ru",
+    "context": {
+      "style": "formal",
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
+  },
+  {
+    "text_id": "01bf4508-df4d-4e38-9a0f-621ede9edec4",
+    "content": "я тебя люблю",
+    "source_language": "ru",
+    "context": {
+      "style": "formal",
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
+  },
+  {
+    "text_id": "80eac876-2aeb-4896-8564-0774aa85cbb1",
+    "content": "я тебя люблю",
+    "source_language": "ru",
+    "context": {
+      "style": "casual",
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
+  },
+  {
+    "text_id": "3adfb19f-da7f-41bf-8780-07314198de77",
+    "content": "я тебя люблю",
+    "source_language": "ru",
+    "context": {
+      "style": "casual",
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
+  },
+  {
+    "text_id": "d1f0cc04-02be-4c80-80ca-b3c0d34bb005",
+    "content": "я тебя люблю",
+    "source_language": "ru",
+    "context": {
+      "style": "casual",
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
+  },
+  {
+    "text_id": "266d6486-3af6-4436-9ff2-4f84212a3326",
+    "content": "я тебя люблю",
+    "source_language": "ru",
+    "context": {
+      "style": "casual",
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
+  },
+  {
+    "text_id": "9faf3d97-c18c-4ab8-af4e-8558581df949",
+    "content": "я тебя люблю",
+    "source_language": "ru",
+    "context": {
+      "style": "casual",
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
+  },
+  {
+    "text_id": "16477ad2-5ec2-4833-9d33-d0d4fab3c33d",
+    "content": "hello",
+    "source_language": "en",
+    "context": {
+      "style": "neutral",
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
+  },
+  {
+    "text_id": "56b55fef-b3cd-4738-a2a2-51320b290aaf",
+    "content": "hello",
+    "source_language": "en",
+    "context": {
+      "style": "neutral",
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
+  },
+  {
+    "text_id": "caf82e6b-7dee-403f-8ced-432fc8114e8e",
+    "content": "hello",
+    "source_language": "en",
+    "context": {
+      "style": "casual",
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
+  },
+  {
+    "text_id": "1edf7adc-77e1-4705-83b7-1d4e2b74ee78",
+    "content": "hello",
+    "source_language": "en",
+    "context": {
+      "style": "formal",
+      "cultural_notes": [],
+      "translation_type": "adaptive"
+    }
   }
 ]
