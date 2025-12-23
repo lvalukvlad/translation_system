@@ -2,7 +2,6 @@
 Сервис для анализа культурных особенностей текста
 """
 class CulturalAnalysisService:
-    # База знаний о культурных особенностях
     CULTURAL_PATTERNS = {
         'ru': {
             'greetings': {
@@ -33,7 +32,6 @@ class CulturalAnalysisService:
         """
         cultural_notes = []
         
-        # Анализ стиля обращения
         if source_lang == 'ru':
             if any(word in text.lower() for word in ['вы', 'вас', 'вам']):
                 cultural_notes.append({
@@ -50,7 +48,6 @@ class CulturalAnalysisService:
                     'importance': 'medium'
                 })
         
-        # Анализ приветствий
         text_lower = text.lower()
         if source_lang == 'ru':
             if any(greeting in text_lower for greeting in CulturalAnalysisService.CULTURAL_PATTERNS['ru']['greetings']['formal']):
@@ -61,7 +58,6 @@ class CulturalAnalysisService:
                     'importance': 'high'
                 })
         
-        # Анализ культурных различий в выражениях
         if context.get('domain') == 'love' and source_lang == 'ru':
             cultural_notes.append({
                 'type': 'expression',

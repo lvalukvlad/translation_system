@@ -16,13 +16,12 @@ def api_translate():
 
     text_id = trans_controller.process_text(content, 'auto', context)  # ← auto
     trans_id, draft = trans_controller.generate_draft(text_id, 'en', dialect)
-
-    # Если это сообщение об отсутствии перевода → возвращаем его отдельно
+   
     if draft.startswith("[INFO]"):
         return jsonify({
             "trans_id": trans_id,
             "message": draft,
-            "draft": content  # возвращаем оригинал
+            "draft": content
         })
 
     return jsonify({

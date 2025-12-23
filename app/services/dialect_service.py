@@ -1,9 +1,4 @@
-"""
-Сервис для управления диалектами разных языков
-"""
 class DialectService:
-    """Сервис для получения доступных диалектов для каждого языка"""
-    
     DIALECTS_BY_LANGUAGE = {
         'en': [
             {'value': '', 'label': 'Стандартный'},
@@ -55,7 +50,6 @@ class DialectService:
     
     @staticmethod
     def get_dialects_for_language(lang_code):
-        """Возвращает список диалектов для указанного языка"""
         return DialectService.DIALECTS_BY_LANGUAGE.get(lang_code, [
             {'value': '', 'label': 'Стандартный'}
         ])

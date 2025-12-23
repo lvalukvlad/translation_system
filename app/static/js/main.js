@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Диалекты для разных языков
   const dialects = {
     'en': [
       {value: '', label: 'Стандартный'},
@@ -49,7 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
     ]
   };
 
-  // Функция для обновления диалектов
   function updateDialects(targetLang) {
     const dialectSelect = document.getElementById('dialect');
     if (!dialectSelect) return;
@@ -60,7 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
     ).join('');
   }
 
-  // Сохранение и восстановление выбранных значений
   function saveFormState() {
     const sourceLang = document.getElementById('source_lang')?.value;
     const targetLang = document.getElementById('target_lang')?.value;
@@ -115,13 +112,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Обновляем диалекты при изменении целевого языка
   const targetLangSelect = document.getElementById('target_lang');
   if (targetLangSelect) {
-    // Восстанавливаем сохраненные значения
     restoreFormState();
     
-    // Если не было сохраненного значения, устанавливаем диалекты для начального значения
     if (!localStorage.getItem('target_lang')) {
       updateDialects(targetLangSelect.value);
     }
@@ -132,7 +126,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
   
-  // Сохраняем состояние при изменении других полей
   document.querySelectorAll('select').forEach(select => {
     select.addEventListener('change', saveFormState);
   });

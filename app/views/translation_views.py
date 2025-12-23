@@ -15,13 +15,11 @@ def translate():
     if request.method == 'POST':
         content = request.form.get('content', '').strip()
 
-        # Если файл загружен → читаем его
         if 'file' in request.files:
             file = request.files['file']
             if file.filename != '' and file.filename.endswith('.txt'):
                 content = file.read().decode('utf-8').strip()
 
-        # Проверяем, что есть текст
         if not content:
             flash("Введите текст или загрузите файл.")
             return render_template('translate.html', result=result)
@@ -30,9 +28,7 @@ def translate():
         target_lang = request.form['target_lang']
         dialect = request.form.get('dialect', '')
         style = request.form.get('style', 'neutral')
-        # Упростили: убрали domain и audience, объединили translation_type и style в один параметр style
 
-        # Определяем translation_type на основе style
         if style == 'literal':
             translation_type = 'literal'
         elif style == 'poetic':
@@ -45,7 +41,6 @@ def translate():
         text_id = trans_controller.process_text(content, source_lang, context.__dict__)
         trans_id, draft = trans_controller.generate_draft(text_id, target_lang, dialect)
 
-        # Сохраняем перевод с информацией о пользователе
         trans_controller.translations.append({
             'trans_id': trans_id,
             'text_id': text_id,
@@ -60,8 +55,7 @@ def translate():
         from app.services.storage_service import StorageService
         StorageService.save_json('translations.json', trans_controller.translations)
 
-        result = draft  # ← Сохраняем результат
-        # Сохраняем введенные данные для отображения в форме
+        result = draft
         form_data = {
             'content': content,
             'source_lang': source_lang,
@@ -77,14 +71,12 @@ def translate():
 @translation_bp.route('/edit-draft/<trans_id>', methods=['GET', 'POST'])
 @require_auth
 def edit_draft(trans_id):
-    # Найдём перевод
     trans = next((t for t in trans_controller.translations if t['trans_id'] == trans_id), None)
     if not trans:
         flash('Перевод не найден')
         return redirect(url_for('translation.dashboard'))
 
     if request.method == 'POST':
-        # Обновим черновик
         new_draft = request.form['draft']
         trans['draft'] = new_draft
         from app.services.storage_service import StorageService
@@ -98,13 +90,11 @@ def edit_draft(trans_id):
 @translation_bp.route('/dashboard')
 @require_auth
 def dashboard():
-    # Загрузим переводы только текущего пользователя
     from app.services.storage_service import StorageService
     all_translations = StorageService.load_json('translations.json', [])
     user_id = session.get('user_id')
     username = session.get('user')
     
-    # Фильтруем переводы по пользователю
     user_translations = [
         t for t in all_translations 
         if t.get('user_id') == user_id or t.get('username') == username
@@ -116,7 +106,6 @@ def dashboard():
 @require_auth
 def localize(trans_id):
     from app.controllers.localization_controller import LocalizationController
-    # Найдём перевод
     trans = next((t for t in trans_controller.translations if t['trans_id'] == trans_id), None)
     if not trans:
         flash('Перевод не найден')
@@ -129,13 +118,11 @@ def localize(trans_id):
         if custom_variant:
             final_text = custom_variant
         elif chosen_variant:
-            # Убираем префикс [FORMAL], [CASUAL] и т.д.
             final_text = chosen_variant.split('] ', 1)[1] if '] ' in chosen_variant else chosen_variant
         else:
             flash('Выберите вариант или введите свой')
             return redirect(url_for('translation.localize', trans_id=trans_id))
         
-        # Сохраняем финальную версию
         trans['final_version'] = final_text
         trans['status'] = 'localized'
         from app.services.storage_service import StorageService
@@ -143,7 +130,6 @@ def localize(trans_id):
         flash('Вариант перевода утверждён. Теперь вы можете просмотреть и утвердить финальную версию.')
         return redirect(url_for('translation.view_final', trans_id=trans_id))
     
-    # Генерируем варианты перевода
     original_context = trans.get('context', {})
     variants = LocalizationController.generate_variants(trans['draft'], original_context)
     return render_template('localize.html', translation=trans, variants=variants)
@@ -159,13 +145,11 @@ def view_graph():
 @translation_bp.route('/final/<trans_id>', methods=['GET', 'POST'])
 @require_auth
 def view_final(trans_id):
-    """Страница взаимодействия с финальной версией перевода"""
     trans = next((t for t in trans_controller.translations if t['trans_id'] == trans_id), None)
     if not trans:
         flash('Перевод не найден')
         return redirect(url_for('translation.dashboard'))
     
-    # Проверяем, что перевод принадлежит текущему пользователю
     user_id = session.get('user_id')
     username = session.get('user')
     if trans.get('user_id') != user_id and trans.get('username') != username:

@@ -1,6 +1,3 @@
-"""
-Сервис для работы с экспертами и консультациями
-"""
 from app.models.user import Expert
 from app.services.storage_service import StorageService
 
@@ -10,7 +7,6 @@ class ExpertService:
         self.consultations = StorageService.load_json('consultations.json', [])
     
     def create_expert(self, username, email, specialization=None):
-        """Создает нового эксперта"""
         import uuid
         expert = {
             'expert_id': str(uuid.uuid4()),
@@ -24,11 +20,9 @@ class ExpertService:
         return expert
     
     def get_expert(self, expert_id):
-        """Получает эксперта по ID"""
         return next((e for e in self.experts if e['expert_id'] == expert_id), None)
     
     def create_consultation(self, translation_id, expert_id, advice, rating=None):
-        """Создает консультацию от эксперта"""
         import uuid
         from datetime import datetime
         consultation = {
@@ -40,8 +34,6 @@ class ExpertService:
             'created_at': datetime.now().isoformat()
         }
         self.consultations.append(consultation)
-        
-        # Увеличиваем счетчик консультаций эксперта
         expert = self.get_expert(expert_id)
         if expert:
             expert['consultations_count'] = expert.get('consultations_count', 0) + 1
@@ -51,10 +43,8 @@ class ExpertService:
         return consultation
     
     def get_consultations_for_translation(self, translation_id):
-        """Получает все консультации для перевода"""
         return [c for c in self.consultations if c['translation_id'] == translation_id]
     
     def get_experts_by_specialization(self, specialization):
-        """Получает экспертов по специализации"""
         return [e for e in self.experts if e.get('specialization') == specialization]
 

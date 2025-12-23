@@ -18,16 +18,29 @@ class InferenceEngine:
             adapted_context['translation_type'] = 'creative'
         else: 
             adapted_context['translation_type'] = 'adaptive'
+<<<<<<< HEAD
         
         full_phrase_translation = self.kg_service.get_best_translation(text.lower(), adapted_context, source_lang, target_lang)
         if full_phrase_translation is not None and full_phrase_translation != text.lower() and full_phrase_translation != "":
             return full_phrase_translation.capitalize()
+=======
+        full_phrase_translation = self.kg_service.get_best_translation(text.lower(), adapted_context, source_lang, target_lang)
+        
+        if full_phrase_translation is not None and full_phrase_translation != text.lower() and full_phrase_translation != "":
+            return full_phrase_translation.capitalize()
+
+>>>>>>> d498ef2 (Update translation system: auth, localization, datasets, UI)
         parsed = NLPService.parse(text)
         translated_words = []
 
         for word in parsed["words"]:
             refined_context = OntologyService.infer_context(context)
+<<<<<<< HEAD
             best_translation = self.kg_service.get_best_translation(word, refined_context, source_lang, target_lang)            
+=======
+            best_translation = self.kg_service.get_best_translation(word, refined_context, source_lang, target_lang)
+        
+>>>>>>> d498ef2 (Update translation system: auth, localization, datasets, UI)
             if best_translation == word and source_lang != 'en' and target_lang != 'en' and source_lang != target_lang:
                 en_word = self.kg_service.get_best_translation(word, refined_context, source_lang, 'en')
                 if en_word != word and en_word:
@@ -43,7 +56,6 @@ class InferenceEngine:
                 final_translation = self.kg_service.get_best_translation(en_translation.lower(), adapted_context, 'en', target_lang)
                 if final_translation != en_translation.lower() and final_translation:
                     result = final_translation
-        
         return result.capitalize()
 
     def _find_similar_phrase(self, text, context):

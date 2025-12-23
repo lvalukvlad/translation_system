@@ -1,6 +1,3 @@
-"""
-Модели данных с отдельными ID для всех сущностей системы
-"""
 import uuid
 from datetime import datetime
 
@@ -61,8 +58,8 @@ class QualityEntity:
     def __init__(self, trans_id, score, metrics=None, reviewer_id=None):
         self.quality_id = str(uuid.uuid4())
         self.trans_id = trans_id
-        self.score = score  # 0.0 - 1.0
-        self.metrics = metrics or {}  # {'accuracy': 0.9, 'fluency': 0.8, 'cultural': 0.7}
+        self.score = score  
+        self.metrics = metrics or {}  
         self.reviewer_id = reviewer_id
         self.created_at = datetime.now().isoformat()
         
@@ -139,7 +136,7 @@ class ModelEntity:
     def __init__(self, name, model_type, source_lang, target_lang, version='1.0'):
         self.model_id = str(uuid.uuid4())
         self.name = name
-        self.model_type = model_type  # 'neural', 'statistical', 'hybrid'
+        self.model_type = model_type  
         self.source_lang = source_lang
         self.target_lang = target_lang
         self.version = version

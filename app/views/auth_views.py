@@ -7,11 +7,9 @@ from app.services.storage_service import StorageService
 
 auth_bp = Blueprint('auth', __name__)
 
-# Загружаем пользователей из хранилища или используем дефолтных
 def get_users():
     users_data = StorageService.load_json('users.json', {})
     if not users_data:
-        # Инициализируем дефолтных пользователей с хешированными паролями
         default_users = {
             'translator1': {
                 'password_hash': generate_password_hash('translator123'),
@@ -33,11 +31,9 @@ def get_users():
         return default_users
     return users_data
 
-# Хранилище токенов (в продакшене лучше использовать Redis или БД)
 TOKENS = {}
 
 def generate_access_token(username, user_id):
-    """Генерирует токен доступа для пользователя"""
     token = secrets.token_urlsafe(32)
     TOKENS[token] = {
         'username': username,
@@ -48,7 +44,6 @@ def generate_access_token(username, user_id):
     return token
 
 def validate_token(token):
-    """Проверяет валидность токена"""
     if token not in TOKENS:
         return None
     token_data = TOKENS[token]
@@ -61,7 +56,6 @@ def validate_token(token):
 @auth_bp.route('/')
 def index():
     if 'user' in session:
-        # Загружаем переводы пользователя для отображения на главной странице
         from app.services.storage_service import StorageService
         all_translations = StorageService.load_json('translations.json', [])
         user_id = session.get('user_id')
@@ -70,7 +64,6 @@ def index():
             t for t in all_translations 
             if t.get('user_id') == user_id or t.get('username') == username
         ]
-        # Нормализуем записи, чтобы в шаблоне всегда был content
         normalized = []
         for t in user_translations:
             if not isinstance(t, dict):
@@ -102,12 +95,10 @@ def login():
         if not check_password_hash(user_data['password_hash'], password):
             return render_template('login.html', error="Неверное имя пользователя или пароль")
         
-        # Создаём сессию
         session['user'] = username
         session['role'] = user_data['role']
         session['user_id'] = user_data['user_id']
         
-        # Генерируем токен доступа
         access_token = generate_access_token(username, user_data['user_id'])
         session['access_token'] = access_token
         
@@ -117,7 +108,6 @@ def login():
 
 @auth_bp.route('/logout')
 def logout():
-    # Удаляем токен из хранилища
     if 'access_token' in session:
         token = session['access_token']
         if token in TOKENS:
@@ -126,7 +116,6 @@ def logout():
     return redirect(url_for('auth.login'))
 
 def require_auth(f):
-    """Декоратор для проверки авторизации"""
     from functools import wraps
     @wraps(f)
     def decorated_function(*args, **kwargs):
